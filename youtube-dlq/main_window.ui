@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1119</width>
+    <height>809</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="back_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="forward_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reload_button">
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="address_bar">
+         <property name="text">
+          <string>http://youtube.com</string>
+         </property>
+         <property name="placeholderText">
+          <string>Enter a web address</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QWebEngineView" name="webEngineView">
+         <property name="url">
+          <url>
+           <string>https://www.youtube.com/</string>
+          </url>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="placeholderText">
+             <string>Enter or choose a download folder</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="browse_button">
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QComboBox" name="format_box">
+            <item>
+             <property name="text">
+              <string>default</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Video</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>webm</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>mp4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Audio</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>mp3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>mp4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>vorbis</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="add_button">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropOverwriteMode">
+          <bool>false</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::InternalMove</enum>
+         </property>
+         <property name="defaultDropAction">
+          <enum>Qt::MoveAction</enum>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::DotLine</enum>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Title</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Extension</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Size</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Percent</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ETA</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Speed</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Status</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1119</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionOptions"/>
+    <addaction name="actionUpdate"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionView_Log"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutQtRole</enum>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="text">
+    <string>Options</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::PreferencesRole</enum>
+   </property>
+  </action>
+  <action name="actionUpdate">
+   <property name="text">
+    <string>Update</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+  </action>
+  <action name="actionView_Log">
+   <property name="text">
+    <string>View Log</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::ApplicationSpecificRole</enum>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>back_button</sender>
+   <signal>clicked()</signal>
+   <receiver>webEngineView</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>forward_button</sender>
+   <signal>clicked()</signal>
+   <receiver>webEngineView</receiver>
+   <slot>forward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reload_button</sender>
+   <signal>clicked()</signal>
+   <receiver>webEngineView</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>404</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
