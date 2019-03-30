@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1119</width>
-    <height>809</height>
+    <width>1440</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
@@ -40,14 +40,14 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="reload_button">
          <property name="text">
-          <string>PushButton</string>
+          <string/>
          </property>
         </widget>
        </item>
@@ -113,7 +113,7 @@
           <item>
            <widget class="QPushButton" name="browse_button">
             <property name="text">
-             <string>...</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -177,7 +177,7 @@
           <item>
            <widget class="QPushButton" name="add_button">
             <property name="text">
-             <string>PushButton</string>
+             <string/>
             </property>
            </widget>
           </item>
@@ -266,8 +266,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1119</width>
-     <height>21</height>
+     <width>1440</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

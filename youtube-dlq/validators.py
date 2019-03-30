@@ -10,10 +10,9 @@ class address_validator(QtGui.QValidator):
         global __supported_hosts__
         url = QtCore.QUrl(input)
         
-        if not url.isValid():
-            return QtGui.QValidator.Invalid
-        elif not url.host() in __supported_hosts__:
-            QtWidgets.QErrorMessage(parent = self.parent()).showMessage(f"{url.host()} is not a supported domain.")
-            return QtGui.QValidator.Invalid
+        if url.isValid() and url.host() in __supported_hosts__:
+            return self.Acceptable
+        elif url.isValid() and url.host() not in __supported_hosts__:
+            return self.Intermediate
         else:
-            return QtGui.QValidato.Acceptable
+            return self.Invalid
